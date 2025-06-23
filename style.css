@@ -1,0 +1,68 @@
+/* Centrage général de la page */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+/* Centrer le contenu du header */
+header {
+  padding: 20px;
+}
+
+/* Réduire la taille du logo */
+.logo {
+  width: 120px; /* Ajuste selon ton goût, par exemple 100px ou 150px */
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+/* Sections principales */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+
+/* Footer centré */
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+/* Déjà présent mais conservé ici */
+.discord {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn-discord {
+  display: inline-flex;
+  align-items: center;
+  background-color: #7289da;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px #999;
+  gap: 10px;
+}
+
+.btn-discord:hover {
+  background-color: #5b6eae;
+}
+
+.discord-logo {
+  height: 1em;
+  width: auto; /* Garde le ratio de l'image */
+}
+
+
