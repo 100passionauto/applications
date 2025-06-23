@@ -27,7 +27,22 @@ main {
   padding: 20px;
 }
 
+/* Bouton de téléchargement */
+.btn-download {
+  display: inline-block;
+  background-color: #28a745;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px #999;
+  margin-top: 10px;
+}
 
+.btn-download:hover {
+  background-color: #218838;
+}
 
 /* Footer centré */
 footer {
@@ -42,6 +57,24 @@ footer {
   text-align: center;
   margin-top: 30px;
 }
+
+.btn-articles {
+  display: inline-flex;
+  align-items: center;
+  background-color: #f44336;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px #999;
+  gap: 10px;
+}
+
+.btn-articles:hover {
+  background-color: #f44336;
+}
+
 
 .btn-discord {
   display: inline-flex;
@@ -64,5 +97,4 @@ footer {
   height: 1em;
   width: auto; /* Garde le ratio de l'image */
 }
-
 
