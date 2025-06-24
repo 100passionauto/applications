@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Page protégée</title>
+  <script>
+    // Mot de passe à entrer
+    const correctPassword = "monmotdepasse";
+
+    // Demande le mot de passe à l'utilisateur
+    const userPassword = prompt("Entrez le code pour accéder à cette page :");
+
+    // Si mauvais mot de passe, rediriger ailleurs ou fermer la page
+    if (userPassword !== correctPassword) {
+      alert("Code incorrect. Accès refusé.");
+      window.location.href = "https://google.com"; // ou une autre page
+    }
+  </script>
+</head>
+<body>
+  <h1>Bienvenue sur la page premuim</h1>
+  <p>Vous avez maintenant accès à du contenu exclusif</p>
+</body>
+</html>
