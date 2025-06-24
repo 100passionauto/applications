@@ -121,3 +121,12 @@ footer {
 .btn-formulaire:hover {
   background-color: #e68900;
 }
+
+.btn-premium {
+  background-color: #ffc107;  /* Jaune/or */
+  color: white;
+}
+
+.btn-premium:hover {
+  background-color: #e0a800;  /* Or plus foncé au survol */
+}
