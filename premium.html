@@ -5,26 +5,22 @@
   <title>Page protégée</title>
   <link rel="stylesheet" href="style.css" />
   <script>
-    // Mot de passe à entrer
     const correctPassword = "2365";
-
-    // Demande le mot de passe à l'utilisateur
     const userPassword = prompt("Entrez le code pour accéder à cette page :");
-
-    // Si mauvais mot de passe, rediriger ailleurs ou fermer la page
     if (userPassword !== correctPassword) {
       alert("Code incorrect. Accès refusé.");
-      window.location.href = "https://google.com"; // ou une autre page
+      window.location.href = "https://google.com";
     }
   </script>
 </head>
 <body>
-  <h1>Bienvenue sur la page premuim</h1>
-  <p>Vous avez maintenant accès à du contenu exclusif</p>
-  
-  <img width="588" src="images/c63.jpg"/>
+  <main class="premium-content">
+    <h1>Bienvenue sur la page premium</h1>
+    <p>Vous avez maintenant accès à du contenu exclusif</p>
 
+    <img src="images/c63.jpg" alt="Contenu premium" class="premium-image" />
 
-   <a href="index.html" target="_blank" class="btn-articles">Retourner à l'accueil</a>
+    <a href="index.html" class="btn-articles">Retourner à l'accueil</a>
+  </main>
 </body>
 </html>
