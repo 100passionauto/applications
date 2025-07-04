@@ -5,32 +5,36 @@
   <title>Page protégée</title>
   <link rel="stylesheet" href="style.css" />
   <script>
-    // Mot de passe à entrer
     const correctPassword = "2365";
-
-    // Demande le mot de passe à l'utilisateur
     const userPassword = prompt("Entrez le code pour accéder à cette page :");
-
-    // Si mauvais mot de passe, rediriger ailleurs ou fermer la page
     if (userPassword !== correctPassword) {
       alert("Code incorrect. Accès refusé.");
-      window.location.href = "https://google.com"; // ou une autre page
+      window.location.href = "https://google.com";
     }
   </script>
 </head>
 <body>
-  <h1>Bienvenue sur la page premuim</h1>
-  <p>Vous avez maintenant accès à du contenu exclusif</p>
-  
-  <img width="320" src="images/c63.jpg"/>
-  
-  
-   <section class="Accueil">
-  <a href="articles.html" class="btn-articles">
-  Retourner aux articles
-   </a>
 
-</section>
-     
+  <header>
+    <img src="images/logo.jpg" alt="Logo 100% Passion Auto" class="logo" />
+    <h1>100% Passion Auto - Accès Premium</h1>
+  </header>
+
+  <main>
+    <section class="premium">
+      <h2>Bienvenue sur la page Premium</h2>
+      <p>Vous avez maintenant accès à du contenu exclusif.</p>
+      <img src="images/c63.jpg" width="588" alt="Contenu premium" />
+
+      <div style="margin-top: 20px;">
+        <a href="articles.html" class="btn-articles">📖 Retourner aux articles</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - 100% Passion Auto</p>
+  </footer>
+
 </body>
 </html>
