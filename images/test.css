@@ -1,0 +1,21 @@
+.Accueil {
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  gap: 20px; /* Espace entre les boutons */
+  margin-top: 20px;
+}
+
+.btn-articles {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px #999;
+  transition: background-color 0.3s ease;
+}
+
+.btn-articles:hover {
+  background-color: #0056b3;
+}

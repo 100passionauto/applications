@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Page protégée</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    const correctPassword = "2365";
+    const userPassword = prompt("Entrez le code pour accéder à cette page :");
+    if (userPassword !== correctPassword) {
+      alert("Code incorrect. Accès refusé.");
+      window.location.href = "https://google.com";
+    }
+  </script>
+</head>
+<body>
+
+  <header>
+    <img src="images/logo.jpg" alt="Logo 100% Passion Auto" class="logo" />
+    <h1>100% Passion Auto</h1>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Bienvenue sur la page Premium</h2>
+      <p>Vous avez maintenant accès à du contenu exclusif.</p>
+    </section>
+
+    <section class="premium">
+      <img src="images/c63.jpg" width="588" alt="Contenu premium" style="max-width: 100%; height: auto; margin-bottom: 20px;" />
+
+      <div>
+        <a href="articles.html" class="btn-articles">📖 Retourner aux articles</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - 100% Passion Auto</p>
+  </footer>
+
+</body>
+</html>
