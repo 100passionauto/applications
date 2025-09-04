@@ -2,42 +2,61 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Page protégée</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium - 100% Passion Auto</title>
   <link rel="stylesheet" href="style.css" />
   <script>
     const correctPassword = "2365";
     const userPassword = prompt("Entrez le code pour accéder à cette page :");
     if (userPassword !== correctPassword) {
       alert("Code incorrect. Accès refusé.");
-      window.location.href = "https://google.com";
+      window.location.href = "index.html";
     }
   </script>
 </head>
 <body>
 
-  <header>
-    <img src="images/logo.jpg" alt="Logo 100% Passion Auto" class="logo" />
-    <h1>100% Passion Auto</h1>
+  <!-- HEADER -->
+  <header class="app-header">
+    <a href="menu.html" class="back-btn">⬅️</a>
+    <h1>Premium</h1>
   </header>
 
+  <!-- CONTENU PRINCIPAL -->
   <main>
-    <section class="intro">
+    <section class="card">
       <h2>Bienvenue sur la page Premium</h2>
-      <p>Vous avez maintenant accès à du contenu exclusif.</p>
+      <p>Vous avez maintenant accès à du contenu exclusif réservé aux membres Premium.</p>
     </section>
 
-    <section class="premium">
-      <img src="images/c63.jpg" width="588" alt="Contenu premium" style="max-width: 100%; height: auto; margin-bottom: 20px;" />
-
-      <div>
-        <a href="articles.html" class="btn-articles">📖 Retourner aux articles</a>
-      </div>
+    <section class="card premium-content">
+      <img src="images/c63.jpg" alt="Contenu premium" class="premium-img">
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 - 100% Passion Auto</p>
-  </footer>
+  <!-- NAVIGATION FIXE EN BAS -->
+  <nav class="bottom-nav">
+    <a href="index.html">
+      <span class="icon">🏠</span>
+      <span class="label">Accueil</span>
+    </a>
+    <a href="articles.html">
+      <span class="icon">📖</span>
+      <span class="label">Articles</span>
+    </a>
+	<a href="premium.html">
+      <span class="icon">⚜️</span>
+      <span class="label">Premium</span>
+    </a>
+    <a href="prochains cours.html">
+      <span class="icon">📅</span>
+      <span class="label">Prochains</span>
+    </a>
+    <a href="menu.html" class="active">
+      <span class="icon">⋯</span>
+      <span class="label">Menu</span>
+    </a>
+  </nav>
 
 </body>
 </html>
