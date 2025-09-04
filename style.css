@@ -176,3 +176,11 @@ h1, h2, h3 {
 .app-header {
   position: relative; /* nécessaire pour positionner le bouton */
 }
+/* IMAGE PREMIUM */
+.premium-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  margin: 15px auto;
+  display: block;
+}
